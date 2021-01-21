@@ -1,0 +1,59 @@
+Para declarar
+
+~$ NOME_VARIAVEL=valor (Sempre sem Espaço)
+
+para imprimir:
+
+~$ echo $NOME_VARIAVEL
+
+AS VARIÁVEIS DECLARADAS DESSA FORMA SÂO APENAS LOCAIS
+PARA QUE UMA VARIÀVEL SEJA GLOBAL É PRECISO USAR O "EXPORT"
+
+~$ export NOME_DA_VARIAVEL
+
+///////VARIAVEIS INTERESSANTES/////////////
+
+HISTFILE = arquivo de histórico dos comandos digitados
+
+HISTFILESIZE = mostra o tamanho máximo do arquivo
+
+HISTSIZE = mostra a quantidade máxima de linhas do arquivo
+
+HOME = mostra o caminho do home do usuário logado
+
+LOGNAME = nome do login 
+
+PWD = diretório atual
+
+SHELL = mostra o shell que está usando
+
+TERM = mostra o terminal que está sendo usado
+
+
+    DISPLAY: Indica às aplicações gráficas onde as janelas deverão ser exibidas. Será estudado no Tópico 106.
+    HISTFILE: Arquivo do histórico de comandos
+    HISTFILESIZE: Quantidade de linhas/comandos armazenados no arquivo de histórico
+    HOME: Indica o diretório do usuário atual
+    LOGNAME e USER: Nome do usuário atual
+    PATH: Diretórios em que o Linux irá procurar por arquivos executáveis
+    PS1: Aparência do prompt do shell.
+    PWD: Diretório atual
+    OLDPWD: Diretório anterior
+
+
+
+
+////////////////VARIAVEIS QUE SÃO MODIFICADAS DINAMNICAMENTE PELO SHELL///////////
+
+São identificadas por um $ no começo
+
+~$ echo $$  mostra o pid do processo atual
+
+~$ echo $! mostra o pid o ultimo processo do rodado em background
+
+~$ echo $? mostra código de retorno (exit code) do último processo rodado
+(quando retorna diferente de 0 significa um erro.... 0 = sucesso)
+
+~$ echo ~ retorna no home do usuário
+
+~$ echo ~root retorna o home do root.

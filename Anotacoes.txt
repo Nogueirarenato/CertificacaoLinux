@@ -1,0 +1,10 @@
+******* Aula 15 *******
+
+Para executar comando em sequencia é preciso separá-los por ";"
+
+~$ clear ; date ; ls
+
+O operador "&&" executa o segundo comando apenas se o primeiro for executado com êxito
+
+O operador "||" executa o segundo comando apenas se o primmeiro NÃO for executado com êxito;
+

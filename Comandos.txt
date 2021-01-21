@@ -1,0 +1,75 @@
+echo = semelhante ao print, mosta o que deve ser impresso no terminal.
+
+
+type = mostra se o comando é interno ou externo do shell
+	retorna "is a shell builtin" quando o comando é interno
+	retorna "is hashed" quando o comando está em hash
+	retorna "is /bin/(caminho do comando)" quando não é interno
+
+
+Obs o PATH serve para localizar o caminho dos comandos externos ao shell, para verificá-lo
+> echo $PATH
+
+
+
+pwd = mostra o diretório atual
+
+
+cd = muda o diretório
+
+
+ls = lista o conteúdo do diretório
+
+
+Para executar um scripit é preciso do caminho completo, ou ir até o diretório e digitar
+> ./Nome_do_script.sh
+
+
+cat = mostra o conteúdo de um texto
+
+
+set = mostra todas as variáveis declaradas no no bash
+
+env = muda o valor de uma variável apenas na execução em questão.
+
+~$ env TESTE=Windows  Globalmente a variavel teste não é modificada.
+
+unset = deleta uma variável
+
+~$ unset TESTE
+
+!! executa o ultimo comando executado.
+
+!numero_do_comando_no_histórico
+
+history -c = limpa o arquivo de histórico
+
+ctrl + r = procura por um comando no seu histórico de comando
+
+man NOME_DO_COMANDO = exibe o manual do comando
+Comandos internos do bash não têm manual, mas estão no manual do bash
+
+info = manual resumido do comando
+
+man -k "elemento a ser buscado" = busca no manual 
+
+whatis COMANDO = inverso ao "man -k"
+
+apropos = semelhante ao "man -k"
+
+uname = imprime informações do sistema
+
+alias = atalhos para comandos
+
+Para criar um alias 
+
+~$ alias ATALHO = "COMANDOS"
+
+alias são temporários.
+
+which = serve para procurar algum arquivo nos diretórios incluidos no PATH
+
+
+
+
+
